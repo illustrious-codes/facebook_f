@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f0f2f5;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  padding-top: 130px;
+}
+
+.intro-section h1 {
+  font-size: 60px;
+  color: #1877f2;
+  margin-bottom: 6px;
+}
+
+.intro-section p {
+  font-size: 24px;
+  line-height: 28px;
+  max-width: 500px;
+}
+
+.signin-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 396px;
+}
+
+.signin-section form {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 396px;
+  min-height: 348px;
+  padding: 10px 16px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.signin-section form input {
+  border: 1px solid #dddfe2;
+  width: 100%;
+  padding: 15px 16px;
+  margin: 10px 0;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.signin-section form input::placeholder {
+  color: #777;
+  font-size: 16px;
+}
+
+.signin-section form input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+.signin-section form div button {
+  background-color: #1877f2;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  padding: 14px 0;
+  margin: 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.1s ease-in;
+}
+
+.signin-section form div button:hover {
+  background: #0d65d9;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.signin-section form a {
+  color: #1877f2;
+  text-align: center;
+  margin: 15px 0;
+  display: block;
+  font-size: 14px;
+}
+
+hr {
+  margin: 20px 16px;
+  border-top: 0.1px solid #dddfe2;
+}
+
+.signin-section form .create-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.signin-section form .create-btn button {
+  background-color: #42b72a;
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  width: auto;
+  cursor: pointer;
+  transition: background 0.1s ease-in;
+}
+
+.signin-section form .create-btn button:hover {
+  background: #3ba626;
+}
+
+.signin-section p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signin-section p a {
+  color: black;
+}
+
+@media (max-width: 956px) {
+  .intro-section {
+    text-align: center;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+}

