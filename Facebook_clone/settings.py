@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-*+f09!hqb-_ri)^z4d%w-$!d6qam8wh*#_^k2q&#92ed-534t@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://facebook-f-1.onrender.com/']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
